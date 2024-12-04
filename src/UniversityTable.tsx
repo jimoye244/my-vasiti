@@ -1,11 +1,10 @@
-import React, { useEffect, useState } from 'react';
+import  { useEffect, useState } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faArrowLeft, faArrowRight } from '@fortawesome/free-solid-svg-icons';
 
 const UniversityTable = () => {
   const [universities, setUniversities] = useState([]);
   const [currentPage, setCurrentPage] = useState(1);
-  const [row, setRow] = useState(1);
   const itemsPerPage = 15;
 
   useEffect(() => {
